@@ -116,7 +116,7 @@
                             <i class="material-icons">done_all</i>
                         </div>
                         <div class="content">
-                            <div class="text" style="color: #fffff !important;">TOTAL COURSE</div>
+                            <div class="text" style="color: #fffff !important;">TOTAL PROGRAM</div>
                             <div class="" style="font-size: 20px;">{{ $get_total_course }}</div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                     <div class="card">
                         <div class="header">
                             <h2 style="font-size: 17px; font-weight: 900; color: #000080;">
-                                OFFERED COURSE
+                                OFFERED PROGRAM
                             </h2>
                         </div>
                         <div class="body">
@@ -194,7 +194,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Course Name</th>
+                                                    <th>Program Name</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -216,7 +216,7 @@
                     <div class="card">
                         <div class="header">
                             <h2 style="font-size: 17px; font-weight: 900; color: #000080;">
-                                TOP PREFERRED COURSE
+                                TOP PREFERRED PROGRAM
                             </h2>
                         </div>
                         <div class="body">

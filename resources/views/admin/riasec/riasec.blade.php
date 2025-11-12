@@ -25,6 +25,8 @@
     <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/themes/all-themes.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('admin/css/HoldOn.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -109,7 +111,7 @@
                                             <th>Initial</th>
                                             <th>Name</th>
                                             <th>Description</th>
-                                            <th>Career Pathway / Related Courses</th>
+                                            <th>Career Pathway / Related Program</th>
                                             <th>Created At</th>
                                             <th>Updated At</th>
                                             <th>Actions</th>
@@ -141,7 +143,7 @@
                                                                 {{ $courseName ? $courseName : 'Course not found' }},<br>
                                                             @endforeach
                                                         @else
-                                                            No courses available
+                                                            No program available
                                                         @endif
                                                         <br>
                                                     @endforeach
@@ -191,7 +193,7 @@
     <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.js') }}"></script>
 
     <!-- Select Plugin Js -->
-    <script src="{{ asset('admin/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- Slimscroll Plugin Js -->
     <script src="{{ asset('admin/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
@@ -341,6 +343,16 @@
     <script src="{{ asset('admin/js/ajax/riasec/edit_riasec.js') }}"></script>
     <script src="{{ asset('admin/js/ajax/riasec/delete_riasec.js') }}"></script>
 
-</body>
+<script>
+    $(document).ready(function() {
+        $('#riasec_id').select2({
+            placeholder: "Select Initial",
+            allowClear: true,
+            minimumResultsForSearch: Infinity, // 🚫 disables the search box
+            width: '100%'
+        });
+    });
+</script>
+    </body>
 
 </html>

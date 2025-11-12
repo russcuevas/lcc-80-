@@ -35,7 +35,7 @@
                 </a>
                 <ul class="ml-menu">
                     <li class="{{ request()->routeIs('admin.course.page') ? 'active' : '' }}">
-                        <a href="{{ route('admin.course.page') }}">Course</a>
+                        <a href="{{ route('admin.course.page') }}">Program</a>
                     </li>
                     <li class="{{ request()->routeIs('admin.riasec.page') ? 'active' : '' }}">
                         <a href="{{ route('admin.riasec.page') }}">Riasec</a>

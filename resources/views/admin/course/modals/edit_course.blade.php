@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="updateCourseModalLabel">Update Course</h4>
+                <h4 class="modal-title" id="updateCourseModalLabel">Update Program</h4>
                 <hr style="background-color: #000080; height: 2px; border: none;">
             </div>
             <div class="modal-body">

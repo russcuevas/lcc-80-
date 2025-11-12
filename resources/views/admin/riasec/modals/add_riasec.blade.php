@@ -1,3 +1,5 @@
+
+
 <div class="modal fade" id="addRiasecModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
@@ -8,13 +10,22 @@
             <div class="modal-body">
                 <form id="form_advanced_validation" class="addRiasec" method="POST" data-route-add-riasec="{{ route('admin.add.riasec') }}">
                     @csrf
-                    <div class="form-group form-float">
-                        <label style="color: #212529; font-weight: 600;" class="form-label">Initial</label>
-                        <div class="form-line">
-                            <input type="text" class="form-control" id="riasec_id" name="riasec_id" required maxlength="1" placeholder="R/I/A/S/E/C" required>
-                        </div>
-                        <div id="error-riasec" class="error-message" style="font-size:12px; margin-top:5px; font-weight:900; color: red;"></div>
+                <div class="form-group form-float">
+                    <label style="color: #212529; font-weight: 600;" class="form-label">Initial</label>
+                    <div class="form-line">
+                        <select class="form-control select2" id="riasec_id" name="riasec_id" required style="width: 100%;">
+                            <option value="" disabled selected>Select Initial</option>
+                            <option value="R">R - Realistic</option>
+                            <option value="I">I - Investigative</option>
+                            <option value="A">A - Artistic</option>
+                            <option value="S">S - Social</option>
+                            <option value="E">E - Enterprising</option>
+                            <option value="C">C - Conventional</option>
+                        </select>
                     </div>
+                    <div id="error-riasec" class="error-message" style="font-size:12px; margin-top:5px; font-weight:900; color:red;"></div>
+                </div>
+
 
                     <div class="form-group form-float">
                         <label style="color: #212529; font-weight: 600;" class="form-label">RIASEC Name</label>
@@ -41,7 +52,7 @@
                             </div>
 
                             <div class="form-group form-float">
-                                <label style="color: #212529; font-weight: 600; margin-top: 20px;" class="form-label" for="course_id[]">Select Related Courses</label>
+                                <label style="color: #212529; font-weight: 600; margin-top: 20px;" class="form-label" for="course_id[]">Select Related Program</label>
                                 <div class="fields-scroll" style="margin-top: 5px">
                                     <div>
                                         @foreach ($courses as $course)

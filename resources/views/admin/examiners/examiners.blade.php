@@ -207,7 +207,7 @@
                                         <th>Age</th>
                                         <th>Birthday</th>
                                         <th>Strand</th>
-                                        <th>Preferred Course</th>
+                                        <th>Preferred Program</th>
                                         <th>Created At</th>
                                         <th>Updated At</th>
                                         <th>Actions</th>

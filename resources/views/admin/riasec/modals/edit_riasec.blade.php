@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label style="color: #212529; font-weight: 600;" class="form-label">Select Related Courses</label>
+                                    <label style="color: #212529; font-weight: 600;" class="form-label">Select Related Program</label>
                                     <div class="fields-scroll">
                                         @foreach ($courses as $course)
                                             <div class="col-5">

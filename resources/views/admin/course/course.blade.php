@@ -78,7 +78,7 @@
                             Dashboard</a></li>
                     <li class="active"><i style="font-size: 20px;" class="material-icons">description</i> Assesstment Management
                     </li>
-                    <li class="active"><i style="font-size: 20px;" class="material-icons"></i> Course List
+                    <li class="active"><i style="font-size: 20px;" class="material-icons"></i> Program List
                     </li>
                 </ol>
             </div>
@@ -89,12 +89,12 @@
                     <div class="card">
                         <div class="header">
                             <h2 style="font-size: 25px; font-weight: 900; color: #000080;">
-                                List of Course
+                                List of Program
                             </h2>
                         </div>
                         <div class="body">
                             <div>
-                                <a href="" class="btn bg-red waves-effect" style="margin-bottom: 15px;" data-toggle="modal" data-target="#addCourseModal">+ ADD COURSE</a>
+                                <a href="" class="btn bg-red waves-effect" style="margin-bottom: 15px;" data-toggle="modal" data-target="#addCourseModal">+ ADD PROGRAM</a>
                             </div>
                             @include('admin.course.modals.add_course')
                             <div class="table-responsive">

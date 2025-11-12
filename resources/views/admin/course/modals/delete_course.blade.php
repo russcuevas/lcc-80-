@@ -5,7 +5,7 @@
                 <h5 class="modal-title" id="deleteCourseModalLabel">Confirm Deletion</h5>
             </div>
             <div class="modal-body">
-                Are you sure you want to delete this course "{{ $available_course->course_name }}"?
+                Are you sure you want to delete this program "{{ $available_course->course_name }}"?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn bg-red waves-effect delete-course" 
