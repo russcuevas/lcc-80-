@@ -27,8 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('default.page') }}">
-                <img style="height: 60px" src="{{ asset('default/images/default-logo.jpg') }}" alt="LCC Logo">
-            </a>
+<img style="height: 60px" > &nbsp; LA CONCEPCION COLLEGE            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

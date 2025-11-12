@@ -55,8 +55,19 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/get-examinees-month-year', [ExaminersController::class, 'GetExamineesMonthYear'])->name('admin.filter-month-year.examiners');
     Route::get('/admin/print-examinees', [ExaminersController::class, 'printExaminees'])->name('admin.print-examinees');
     Route::delete('/admin/examiners_list/delete/{id}', [ExaminersController::class, 'ExaminersListDelete'])->name('admin.delete.examiners.list');
+    
+    // CSV TEMPLATE UI
+    Route::get('/admin/examiners/excel', [ExaminersController::class, 'ExaminersExcelUIPage'])->name('admin.examiners.excel.page');
+    Route::get('/admin/examiners/excel/data', [ExaminersController::class, 'getExaminersData'])
+        ->name('admin.examiners.excel.data');
 
+    Route::post('/admin/examiners/excel/add', [ExaminersController::class, 'addExaminerRow'])
+        ->name('admin.examiners.excel.add');
 
+Route::put('/admin/examiners/excel/update', [ExaminersController::class, 'updateExaminerRow'])
+    ->name('admin.examiners.excel.update');
+
+    
     // RIASEC PAGE ADMIN
     Route::get('/admin/riasec', [RiasecController::class, 'RiasecPage'])->name('admin.riasec.page');
     Route::post('/admin/add_riasec', [RiasecController::class, 'AddRiasec'])->name('admin.add.riasec');

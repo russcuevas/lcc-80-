@@ -95,8 +95,8 @@
                         </div>
                         <div class="body">
                             <div>
-                                <a href="" class="btn bg-red waves-effect" style="margin-bottom: 15px;" data-toggle="modal" data-target="#addDefaultIdModal">MANUAL ADD EXAMINERS</a>
-                                <a href="" class="btn bg-red waves-effect" style="margin-bottom: 15px;" data-toggle="modal" data-target="#importDefaultIdModal">IMPORT CSV</a>
+                                <a href="" class="btn bg-red waves-effect" style="margin-bottom: 15px;" data-toggle="modal" data-target="#addDefaultIdModal">ADD EXAMINERS MANUALLY</a>
+                                <a href="{{ route('admin.examiners.excel.page') }}" class="btn bg-red waves-effect" style="margin-bottom: 15px;"  target="_blank">ADD USING EXCEL</a>
 
                             </div>
                             @include('admin.default_id.modals.add_default_id')
@@ -107,7 +107,7 @@
                                         <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                             <thead>
                                                 <tr>
-                                                    <th>Examiner ID</th>
+                                                    <th>Default ID</th>
                                                     <th>Fullname</th>
                                                     <th>Created At</th>
                                                     <th>Updated At</th>
@@ -116,50 +116,54 @@
                                             </thead>
                                             <tbody>
                                                 @forelse ($available_default_id as $default_id)
-                                                    @if (!empty($default_id->fullname))
-                                                        <tr>
-                                                            <td>{{ $default_id->default_id }}</td>
-                                                            <td>{{ $default_id->fullname }}</td>
-                                                            <td>{{ $default_id->created_at }}</td>
-                                                            <td>{{ $default_id->updated_at }}</td>
-                                                            <td>
-                                                                <a href="#" data-toggle="modal" data-target="#viewExaminersDetails{{ $default_id->id }}" class="btn btn-warning">View Information</a>
-                                                                        {{-- VIEW MODAL --}}
-                                                                        @foreach ($available_default_id as $default_id)
-                                                                        <div class="modal fade" id="viewExaminersDetails{{ $default_id->id }}" tabindex="-1" role="dialog" aria-labelledby="viewExaminersDetailsLabel" aria-hidden="true">
-                                                                            <div class="modal-dialog modal-md" role="document">
-                                                                                <div class="modal-content">
-                                                                                    <div class="modal-header">
-                                                                                        <h4 class="modal-title" id="viewExaminersDetailsLabel">Examiners Information</h4>
-                                                                                        <hr style="background-color: #000080; height: 2px; border: none;">
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                                <p><strong style="color: #000080;">Examiner ID:</strong> {{ $default_id->default_id }}</p>
-                                                                                                <p><strong style="color: #000080;">Fullname:</strong> {{ $default_id->fullname }}</p>
-                                                                                                <p><strong style="color: #000080;">Sex:</strong> <span style="text-transform: capitalize">{{ $default_id->gender }}</span></p>
-                                                                                                <p><strong style="color: #000080;">Age:</strong> {{ $default_id->age }}</p>
-                                                                                                <p><strong style="color: #000080;">Birthday:</strong> {{ $default_id->birthday }}</p>
-                                                                                                <p><strong style="color: #000080;">Strand:</strong> {{ $default_id->strand }}</p>
-                                                                                                <p><strong style="color: #000080;">Email:</strong> {{ $default_id->email }}</p>
-                                                                                                <p><strong style="color: #000080;">Created At:</strong> {{ $default_id->created_at }}</p>
-                                                                                                <p><strong style="color: #000080;">Updated At:</strong> {{ $default_id->updated_at }}</p>
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                    <tr>
+                                                        <td>{{ $default_id->default_id }}</td>
+                                                        <td>{{ $default_id->fullname }}</td>
+                                                        <td>{{ $default_id->created_at }}</td>
+                                                        <td>{{ $default_id->updated_at }}</td>
+                                                        <td>
+                                                            <!-- View Information Button -->
+                                                            <a href="#" data-toggle="modal" data-target="#viewExaminersDetails{{ $default_id->id }}" class="btn btn-warning">
+                                                                View Information
+                                                            </a>
+
+                                                            <!-- VIEW MODAL -->
+                                                            <div class="modal fade" id="viewExaminersDetails{{ $default_id->id }}" tabindex="-1" role="dialog" aria-labelledby="viewExaminersDetailsLabel{{ $default_id->id }}" aria-hidden="true">
+                                                                <div class="modal-dialog modal-md" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h4 class="modal-title" id="viewExaminersDetailsLabel{{ $default_id->id }}">Examiner Information</h4>
+                                                                            <hr style="background-color: #000080; height: 2px; border: none;">
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
                                                                         </div>
-                                                                    @endforeach
-                                                            </td>
-                                                        </tr>
-                                                    @endif
+                                                                        <div class="modal-body">
+                                                                            <p><strong style="color: #000080;">Default ID:</strong> {{ $default_id->default_id }}</p>
+                                                                            <p><strong style="color: #000080;">Fullname:</strong> {{ $default_id->fullname }}</p>
+                                                                            <p><strong style="color: #000080;">Sex:</strong> <span style="text-transform: capitalize">{{ $default_id->gender }}</span></p>
+                                                                            <p><strong style="color: #000080;">Age:</strong> {{ $default_id->age }}</p>
+                                                                            <p><strong style="color: #000080;">Birthday:</strong> {{ $default_id->birthday }}</p>
+                                                                            <p><strong style="color: #000080;">Strand:</strong> {{ $default_id->strand }}</p>
+                                                                            <p><strong style="color: #000080;">Email:</strong> {{ $default_id->email }}</p>
+                                                                            <p><strong style="color: #000080;">Created At:</strong> {{ $default_id->created_at }}</p>
+                                                                            <p><strong style="color: #000080;">Updated At:</strong> {{ $default_id->updated_at }}</p>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                 @empty
                                                     <tr>
-                                                        <td colspan="5" class="text-center">No records</td>
+                                                        <td colspan="5" class="text-center">No records found</td>
                                                     </tr>
                                                 @endforelse
                                             </tbody>
+
                                         </table>
                                     </div>
                                 </div>

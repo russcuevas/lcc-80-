@@ -9,7 +9,7 @@
                 <form id="form_advanced_validation" class="addDefaultId" method="POST" data-route-add-default-id="{{ route('admin.add.examiners') }}">
                     @csrf
                     <div class="form-group form-float">
-                        <label style="color: #212529; font-weight: 600;" class="form-label">Examiners ID</label>
+                        <label style="color: #212529; font-weight: 600;" class="form-label">Default ID</label>
                         <div class="form-line">
                             <input style="background-color: gray; padding: 10px; color: white;" type="text" class="form-control" name="default_id" readonly value="{{ $next_id }}" required>
                         </div>
@@ -54,6 +54,11 @@
                                 <option value="HUMSS">Humanities and Social Science (HUMSS)</option>
                                 <option value="ABM">Accountancy, Business and Management (ABM)</option>
                                 <option value="STEM">Science, Technology, Engineering, and Mathematics (STEM)</option>
+                                <option value="GAS">General Academics (GAS)</option>
+                                <option value="ICT">Science, Technology, Engineering, and Mathematics (ICT)</option>
+                                <option value="HE">Science, Technology, Engineering, and Mathematics (HE)</option>
+                                <option value="IA">Science, Technology, Engineering, and Mathematics (IA)</option>
+
                             </select>
                         </div>
                     </div>

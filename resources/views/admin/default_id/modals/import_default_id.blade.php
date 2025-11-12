@@ -20,11 +20,11 @@
                                 <li>Required: there's a sample csv file to download <br> and it is required to fill up all fields</li>
                                 <li>Maximum file size: <b>5MB</b></li>
                             </ul>
-                        <a href="{{ asset('sample_users_import.csv') }}" 
+                                <a href="{{ route('admin.examiners.excel.page') }}" 
                                 class="btn bg-red" 
                                 style="margin-top: 20px; font-weight: 600;" 
-                                download>
-                                    <i class="fa fa-download"></i> Download Sample CSV Template
+                                target="_blank">
+                                    <i class="fa fa-download"></i> CSV Template
                                 </a>
                         </div>
                     </div>

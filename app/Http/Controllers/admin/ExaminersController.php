@@ -347,4 +347,86 @@ class ExaminersController extends Controller
 
         return response()->json(['error' => 'No DefaultID selected for deletion'], 400);
     }
+
+public function ExaminersExcelUIPage()
+{
+    return view('admin.default_id.examiners_excel');
+}
+
+public function getExaminersData()
+    {
+        $examiners = DB::table('users')->select(
+            'default_id', 'fullname', 'gender', 'age', 'email', 'strand', 'birthday'
+        )->get();
+
+        // Add a default plain password for frontend (for display only)
+        $examiners = $examiners->map(function ($row) {
+            $row->plain_password = 'lcc1234';
+            return $row;
+        });
+
+        return response()->json($examiners);
+    }
+
+    // Add a new examiner
+    public function addExaminerRow(Request $request)
+    {
+        $request->validate([
+            'default_id' => 'required|string|unique:users,default_id',
+            'fullname' => 'nullable|string',
+            'gender' => 'nullable|string',
+            'age' => 'nullable|integer|min:1',
+            'email' => 'nullable|email|unique:users,email',
+            'strand' => 'nullable|string',
+            'birthday' => 'nullable|date',
+            'password' => 'required|string',
+        ]);
+        
+        DB::table('users')->insert([
+            'default_id' => $request->default_id,
+            'fullname' => $request->fullname,
+            'gender' => $request->gender,
+            'age' => $request->age,
+            'email' => $request->email,
+            'strand' => $request->strand,
+            'birthday' => $request->birthday,
+            'password' => Hash::make($request->password),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        return response()->json(['success' => true, 'message' => 'Examiner added successfully']);
+    }
+   public function updateExaminerRow(Request $request)
+{
+    $request->validate([
+        'default_id' => 'required|string|exists:users,default_id', // must exist
+        'fullname'   => 'nullable|string',
+        'gender'     => 'nullable|string',
+        'age'        => 'nullable|integer|min:1',
+        'email'      => 'nullable|email|unique:users,email,' . $request->default_id . ',default_id',
+        'strand'     => 'nullable|string',
+        'birthday'   => 'nullable|date',
+        // password excluded
+    ]);
+
+    // Update the row based on the given default_id
+    DB::table('users')
+        ->where('default_id', $request->default_id)
+        ->update([
+            'fullname'   => $request->fullname,
+            'gender'     => $request->gender,
+            'age'        => $request->age,
+            'email'      => $request->email,
+            'strand'     => $request->strand,
+            'birthday'   => $request->birthday,
+            'updated_at' => now(),
+        ]);
+
+    return response()->json([
+        'success' => true,
+        'message' => 'Examiner updated successfully',
+        'default_id' => $request->default_id // return it so front-end can stay in sync
+    ]);
+}
 }
