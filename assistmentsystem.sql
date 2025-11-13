@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2025 at 04:11 AM
+-- Generation Time: Nov 13, 2025 at 02:46 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -87,48 +87,48 @@ CREATE TABLE `career_pathways` (
 --
 
 INSERT INTO `career_pathways` (`id`, `riasec_id`, `career_name`, `created_at`, `updated_at`) VALUES
-(2, 'R', 'Agriculture', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(3, 'R', 'Health Assistant', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(4, 'R', 'Computers', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(5, 'R', 'Construction', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(6, 'R', 'Mechanic', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(7, 'R', 'Engineering', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(8, 'R', 'Food and Hospitality', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
-(9, 'I', 'Marine Biology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(10, 'I', 'Engineering', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(11, 'I', 'Chemistry', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(12, 'I', 'Zoology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(13, 'I', 'Medicine/Surgery', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(14, 'I', 'Consumer Economics', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(15, 'I', 'Psychology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-(16, 'A', 'Communications', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(17, 'A', 'Cosmetology', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(18, 'A', 'Fine and Performing Arts', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(19, 'A', 'Photography', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(20, 'A', 'Radio and TV', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(21, 'A', 'Interior Design', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(22, 'A', 'Architecture', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-(23, 'S', 'Counseling', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(24, 'S', 'Nursing', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(25, 'S', 'Physical Therapy', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(26, 'S', 'Travel', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(27, 'S', 'Advertising', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(28, 'S', 'Public Relations', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(29, 'S', 'Education', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
-(30, 'E', 'Fashion Merchandising', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(31, 'E', 'Real Estate', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(32, 'E', 'Marketing/Sales', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(33, 'E', 'Law', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(34, 'E', 'Political Science', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(35, 'E', 'International Trade', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(36, 'E', 'Banking/Finance', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-(37, 'C', 'Accounting', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(38, 'C', 'Court Reporting', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(39, 'C', 'Insurance', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(40, 'C', 'Administration', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(41, 'C', 'Medical Records', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(42, 'C', 'Banking', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-(43, 'C', 'Data Processing', '2025-11-12 05:33:13', '2025-11-12 05:33:13');
+(44, 'R', 'Agriculture', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(45, 'R', 'Computers', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(46, 'R', 'Construction', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(47, 'R', 'Engineering', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(48, 'R', 'Food and Hospitality', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(49, 'R', 'Health Assistant', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(50, 'R', 'Mechanic', '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(51, 'I', 'Chemistry', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(52, 'I', 'Consumer Economics', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(53, 'I', 'Engineering', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(54, 'I', 'Marine Biology', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(55, 'I', 'Medicine/Surgery', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(56, 'I', 'Psychology', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(57, 'I', 'Zoology', '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(58, 'A', 'Architecture', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(59, 'A', 'Communications', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(60, 'A', 'Cosmetology', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(61, 'A', 'Fine and Performing Arts', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(62, 'A', 'Interior Design', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(63, 'A', 'Photography', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(64, 'A', 'Radio and TV', '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(65, 'S', 'Advertising', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(66, 'S', 'Counseling', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(67, 'S', 'Education', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(68, 'S', 'Nursing', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(69, 'S', 'Physical Therapy', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(70, 'S', 'Public Relations', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(71, 'S', 'Travel', '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(72, 'E', 'Banking/Finance', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(73, 'E', 'Fashion Merchandising', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(74, 'E', 'International Trade', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(75, 'E', 'Law', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(76, 'E', 'Marketing/Sales', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(77, 'E', 'Political Science', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(78, 'E', 'Real Estate', '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(79, 'C', 'Accounting', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(80, 'C', 'Administration', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(81, 'C', 'Banking', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(82, 'C', 'Court Reporting', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(83, 'C', 'Data Processing', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(84, 'C', 'Insurance', '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(85, 'C', 'Medical Records', '2025-11-13 03:48:34', '2025-11-13 03:48:34');
 
 -- --------------------------------------------------------
 
@@ -178,6 +178,65 @@ CREATE TABLE `course_career_pathways` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `course_career_pathways`
+--
+
+INSERT INTO `course_career_pathways` (`id`, `career_pathway_id`, `course_id`, `created_at`, `updated_at`) VALUES
+(1, 45, 9, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(2, 46, 5, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(3, 47, 5, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(4, 48, 7, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(5, 48, 8, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(6, 49, 10, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(7, 49, 14, '2025-11-13 03:43:42', '2025-11-13 03:43:42'),
+(8, 52, 1, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(9, 52, 2, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(10, 52, 4, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(11, 53, 5, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(12, 55, 10, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(13, 56, 10, '2025-11-13 03:45:13', '2025-11-13 03:45:13'),
+(14, 58, 5, '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(15, 59, 11, '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(16, 61, 11, '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(17, 62, 5, '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(18, 64, 11, '2025-11-13 03:46:06', '2025-11-13 03:46:06'),
+(19, 65, 4, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(20, 65, 7, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(21, 65, 8, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(22, 66, 10, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(23, 67, 12, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(24, 67, 13, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(25, 67, 14, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(26, 69, 14, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(27, 70, 4, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(28, 70, 7, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(29, 70, 8, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(30, 71, 7, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(31, 71, 8, '2025-11-13 03:47:00', '2025-11-13 03:47:00'),
+(32, 72, 1, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(33, 72, 2, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(34, 72, 3, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(35, 72, 4, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(36, 74, 4, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(37, 75, 6, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(38, 76, 4, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(39, 76, 7, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(40, 76, 8, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(41, 77, 6, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(42, 78, 4, '2025-11-13 03:47:44', '2025-11-13 03:47:44'),
+(43, 79, 1, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(44, 79, 2, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(45, 79, 3, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(46, 80, 4, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(47, 81, 1, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(48, 81, 2, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(49, 81, 3, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(50, 81, 4, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(51, 83, 9, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(52, 84, 1, '2025-11-13 03:48:34', '2025-11-13 03:48:34'),
+(53, 84, 4, '2025-11-13 03:48:34', '2025-11-13 03:48:34');
 
 -- --------------------------------------------------------
 
@@ -447,12 +506,12 @@ CREATE TABLE `riasecs` (
 --
 
 INSERT INTO `riasecs` (`id`, `riasec_name`, `description`, `created_at`, `updated_at`) VALUES
-('A', 'Artistic', 'Sample', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
-('C', 'Conventional', 'Sample', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
-('E', 'Enterprising', 'Sample', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
-('I', 'Investigative', 'Sample', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
-('R', 'Realistic', 'Sample', '2025-11-12 05:22:12', '2025-11-12 05:22:57'),
-('S', 'Social', 'Sample', '2025-11-12 05:26:02', '2025-11-12 05:26:02');
+('A', 'Artistic', 'Sample', '2025-11-12 05:24:54', '2025-11-13 03:46:06'),
+('C', 'Conventional', 'Sample', '2025-11-12 05:33:13', '2025-11-13 03:48:34'),
+('E', 'Enterprising', 'Sample', '2025-11-12 05:27:09', '2025-11-13 03:47:44'),
+('I', 'Investigative', 'Sample', '2025-11-12 05:23:55', '2025-11-13 03:45:13'),
+('R', 'Realistic', 'Sample', '2025-11-12 05:22:12', '2025-11-13 03:43:42'),
+('S', 'Social', 'Sample', '2025-11-12 05:26:02', '2025-11-13 03:47:00');
 
 -- --------------------------------------------------------
 
@@ -489,8 +548,10 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('4VfPtaLpESMHYftmQ1aAZUYWONxr3zY0y4mPMRnR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSTltTXBGWVYyS3J3NklHaGxQQ0RiTmg5UDVMZTROdHFJdlkwVG9HbiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1762961357),
-('WubuskfmFPDO0YlVI8w17AZOlbXChyKzBAAIxpEC', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoid0JHQ0ZoVXJHYXVveUNuQkI1NktaYTBuR1plVXNxc3c1TUZJYTZVTyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9yaWFzZWMvc2NvcmVzP3llYXI9MjAyNSI7fXM6NTI6ImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1763003413);
+('D3O6GJ3GA7yj4BhOPEXuCz1kG1WOCbnvF965EJOT', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicUxiV0FlYjNXYW5nTVZLbFhRMU9keUJ3NWN5cGRxcDhkTGYzZXFxSyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTMyOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvcmlhc2VjL3ByZWRpY3Q/c2NvcmVzJTVCUiU1RD0zJnNjb3JlcyU1QkklNUQ9MyZzY29yZXMlNUJBJTVEPTQmc2NvcmVzJTVCUyU1RD00JnNjb3JlcyU1QkUlNUQ9NSZzY29yZXMlNUJDJTVEPTQiO31zOjUyOiJsb2dpbl91c2Vyc181OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjkyO30=', 1763038636),
+('Dc52ablyDxFtdCNmx3RKu5Vfp7F9rCntVUuQSH66', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoid0JHQ0ZoVXJHYXVveUNuQkI1NktaYTBuR1plVXNxc3c1TUZJYTZVTyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDg6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9leGFtaW5lcnMvZXhjZWwvZGF0YSI7fXM6NTI6ImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1763014899),
+('oPq2wARdqupdpm0LWAV56qKL6VkV8i58A258kAm4', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiS2w5WWxRemhNdWNlMEd6UW16bU9rMGJZSkNpMlplRm1CZFhJM096MiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTMyOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvcmlhc2VjL3ByZWRpY3Q/c2NvcmVzJTVCUiU1RD01JnNjb3JlcyU1QkklNUQ9MyZzY29yZXMlNUJBJTVEPTQmc2NvcmVzJTVCUyU1RD02JnNjb3JlcyU1QkUlNUQ9NCZzY29yZXMlNUJDJTVEPTUiO31zOjUyOiJsb2dpbl91c2Vyc181OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjkwO30=', 1763015599),
+('X5UbNs8xKe85WyR2pVoh9RtIByYNxJGjkqbzFjvo', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiaVhraTBTd3FGVHJpUHdBSlFJNGdCZTBySkhpcVlUUktYYjNlVHdTcSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1763039520);
 
 -- --------------------------------------------------------
 
@@ -657,13 +718,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `career_pathways`
 --
 ALTER TABLE `career_pathways`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
 -- AUTO_INCREMENT for table `courses`
@@ -675,7 +736,7 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `course_career_pathways`
 --
 ALTER TABLE `course_career_pathways`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -705,7 +766,7 @@ ALTER TABLE `options`
 -- AUTO_INCREMENT for table `preferred_courses`
 --
 ALTER TABLE `preferred_courses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `questions`
@@ -717,13 +778,13 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `riasec_scores`
 --
 ALTER TABLE `riasec_scores`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- Constraints for dumped tables
