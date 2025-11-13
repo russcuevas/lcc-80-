@@ -55,10 +55,9 @@
                                 <option value="ABM">Accountancy, Business and Management (ABM)</option>
                                 <option value="STEM">Science, Technology, Engineering, and Mathematics (STEM)</option>
                                 <option value="GAS">General Academics (GAS)</option>
-                                <option value="ICT">Science, Technology, Engineering, and Mathematics (ICT)</option>
-                                <option value="HE">Science, Technology, Engineering, and Mathematics (HE)</option>
-                                <option value="IA">Science, Technology, Engineering, and Mathematics (IA)</option>
-
+                                <option value="ICT">Information and Communications Technology (ICT)</option>
+                                <option value="HE">Home Economics (HE)</option>
+                                <option value="IA">Industrial Arts (IA)</option>
                             </select>
                         </div>
                     </div>

@@ -201,7 +201,7 @@
                         @foreach($usersData as $data)
                             @if(!empty($data['preferredCourseNames']))
                                 <tr>
-                                    <td>{{ $data['user']->id }}</td>
+                                    <td>{{ $data['user']->default_id }}</td>
                                     <td>{{ $data['user']->fullname }}</td>
                                     <td style="text-transform: capitalize">{{ $data['user']->gender }}</td>
                                     <td>{{ $data['user']->age }}</td>

@@ -54,7 +54,7 @@ $(document).ready(function () {
 function submitResponseShowLoading() {
     HoldOn.open({
         theme: 'sk-circle',
-        message: '<div class="loading-message">Please wait, calculating the results.....</div>',
+        message: '<div class="loading-message">Please wait, generating the results.....</div>',
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
         textColor: '#fff'
     });

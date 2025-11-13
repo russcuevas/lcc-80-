@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2025 at 05:22 AM
+-- Generation Time: Nov 13, 2025 at 04:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `profile_picture`, `fullname`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'LCC Admin', 'lcc_assistments@gmail.com', '$2y$12$8vld90lZ4orZZN6uNJ8WiOzm3eiVVvLBjiRwaLVz2greUuN30Fa9S', '2025-10-03 12:07:46', '2025-10-03 12:07:46');
+(1, NULL, 'LCC Admin', 'lcc_assistments@gmail.com', '$2y$12$j1BuVkNeDcrendN8crlf7OsOCTBkq1L2oXzZGWj2z0YeRZ9/valTi', '2025-11-11 13:41:37', '2025-11-11 13:41:37');
 
 -- --------------------------------------------------------
 
@@ -87,8 +87,48 @@ CREATE TABLE `career_pathways` (
 --
 
 INSERT INTO `career_pathways` (`id`, `riasec_id`, `career_name`, `created_at`, `updated_at`) VALUES
-(2, 'R', 'Health Services', '2025-11-07 13:01:03', '2025-11-07 13:01:03'),
-(3, 'R', 'Industrial and Engineering Technology', '2025-11-07 13:01:03', '2025-11-07 13:01:03');
+(2, 'R', 'Agriculture', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(3, 'R', 'Health Assistant', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(4, 'R', 'Computers', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(5, 'R', 'Construction', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(6, 'R', 'Mechanic', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(7, 'R', 'Engineering', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(8, 'R', 'Food and Hospitality', '2025-11-12 05:22:57', '2025-11-12 05:22:57'),
+(9, 'I', 'Marine Biology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(10, 'I', 'Engineering', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(11, 'I', 'Chemistry', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(12, 'I', 'Zoology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(13, 'I', 'Medicine/Surgery', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(14, 'I', 'Consumer Economics', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(15, 'I', 'Psychology', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+(16, 'A', 'Communications', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(17, 'A', 'Cosmetology', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(18, 'A', 'Fine and Performing Arts', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(19, 'A', 'Photography', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(20, 'A', 'Radio and TV', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(21, 'A', 'Interior Design', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(22, 'A', 'Architecture', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+(23, 'S', 'Counseling', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(24, 'S', 'Nursing', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(25, 'S', 'Physical Therapy', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(26, 'S', 'Travel', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(27, 'S', 'Advertising', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(28, 'S', 'Public Relations', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(29, 'S', 'Education', '2025-11-12 05:26:02', '2025-11-12 05:26:02'),
+(30, 'E', 'Fashion Merchandising', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(31, 'E', 'Real Estate', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(32, 'E', 'Marketing/Sales', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(33, 'E', 'Law', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(34, 'E', 'Political Science', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(35, 'E', 'International Trade', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(36, 'E', 'Banking/Finance', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+(37, 'C', 'Accounting', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(38, 'C', 'Court Reporting', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(39, 'C', 'Insurance', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(40, 'C', 'Administration', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(41, 'C', 'Medical Records', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(42, 'C', 'Banking', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+(43, 'C', 'Data Processing', '2025-11-12 05:33:13', '2025-11-12 05:33:13');
 
 -- --------------------------------------------------------
 
@@ -110,10 +150,20 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`id`, `course_name`, `course_description`, `course_picture`, `created_at`, `updated_at`) VALUES
-(3, 'Bachelor of Science in Information Technology', 'Sample', '[\"RgxvSwpuEL0bR2ns3Q2I63n9VLFlKoTYNhJyJljK.jpg\"]', '2025-10-11 10:58:10', '2025-10-11 10:58:10'),
-(4, 'Bachelor of Science in Business Administration', 'Sample', '[\"hlVfYMbcxwnhLJEbaxiOabHmIvQj5XB8gyJPJboq.jpg\"]', '2025-11-07 08:33:09', '2025-11-07 08:33:09'),
-(5, 'Bachelor of Science in Accountancy', 'Sample', '[\"mNkzSk7Qy01Ha0wapzjRHlY36c5F2aheu9vUlzh7.jpg\"]', '2025-11-07 08:33:27', '2025-11-07 08:33:27'),
-(6, 'Bachelor of Science in Nursing', 'Sample Course', '[\"P6SUuFKermw5LDIMEnVz4Wf6ByLgOvhxpF9uLJBu.jpg\"]', '2025-11-07 13:00:09', '2025-11-07 13:00:09');
+(1, 'BS Accountancy', 'Sample', '[\"xcnZK6cL7NBAcf4hxWGl89RscP68ismZVGb8n5e3.png\"]', '2025-11-12 05:13:04', '2025-11-12 05:13:04'),
+(2, 'BS Accounting Information System', 'Sample', '[\"GL5DQ8kCXsrUZ1hYHUfIYAQFqhV7oYyfXh3pdi6F.png\"]', '2025-11-12 05:13:28', '2025-11-12 05:13:44'),
+(3, 'BS Accounting Technology', 'Sample', '[\"UTsqCGecD3pWXUkV9nUzPTEgwpKGpFDQGOWJIVrc.png\"]', '2025-11-12 05:13:57', '2025-11-12 05:13:57'),
+(4, 'BS Business Administration', 'Sample', '[\"EQ0qdqlqvYrucY9R9gAbiZhq1zrjRqdwRKNR4wr6.png\"]', '2025-11-12 05:14:25', '2025-11-12 05:14:25'),
+(5, 'BS Civil Engineering', 'Sample', '[\"zJkWXz73m5iTfJZpRba5cCd7JdFHzvUiLbtb5Uj5.png\"]', '2025-11-12 05:14:36', '2025-11-12 05:14:36'),
+(6, 'BS Criminology', 'Sample', '[\"kUtRwVjQQfzZImHSBOOOZor4QmVYvoz6FYVoCMDK.png\"]', '2025-11-12 05:14:50', '2025-11-12 05:14:50'),
+(7, 'BS Hospitality Management', 'Sample', '[\"ZovjXS7vkZbiCWG3SmKwPgyke6OqFi8VexloPsz8.png\"]', '2025-11-12 05:15:01', '2025-11-12 05:15:01'),
+(8, 'BS Hotel and Restaurant Management', 'Sample', '[\"hUoyHRdysREFKPxUPOBswAMcqSNOyuJs5oflkhOX.png\"]', '2025-11-12 05:15:18', '2025-11-12 05:15:18'),
+(9, 'BS Information Systems', 'Sample', '[\"Ic4vgLw1XECUXZzfsINVSpkkPYaeTP8JQwF3rRxt.png\"]', '2025-11-12 05:15:33', '2025-11-12 05:15:33'),
+(10, 'BS Psychology', 'Sample', '[\"gfWJy5bWsEFrDIZA9rQu6NANbXY55KuhyQaJuRE8.png\"]', '2025-11-12 05:16:36', '2025-11-12 05:16:36'),
+(11, 'AB English Language', 'Sample', '[\"ZW5z3v51xTSElAxXkBnykaso8bB1xSNXcFQX9CNC.png\"]', '2025-11-12 05:16:53', '2025-11-12 05:16:53'),
+(12, 'B Elementary Education', 'Sample', '[\"Q7D2B6rpwGDlT6OfvJmw5LZLsXOdDWeoXZtjREAS.png\"]', '2025-11-12 05:17:07', '2025-11-12 05:17:07'),
+(13, 'B Secondary Education', 'Sample', '[\"U52PAMvdLrD3ltQSQQpVNcpXQxjNcQX0TBZb8Bz2.png\"]', '2025-11-12 05:17:17', '2025-11-12 05:17:17'),
+(14, 'B Physical Education', 'Sample', '[\"CVBNoiBeLZ98wtjHcCnOLpUZFbiGtkrwA2tI2YwO.png\"]', '2025-11-12 05:17:25', '2025-11-12 05:17:25');
 
 -- --------------------------------------------------------
 
@@ -128,16 +178,6 @@ CREATE TABLE `course_career_pathways` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `course_career_pathways`
---
-
-INSERT INTO `course_career_pathways` (`id`, `career_pathway_id`, `course_id`, `created_at`, `updated_at`) VALUES
-(2, 2, 4, '2025-11-07 13:01:03', '2025-11-07 13:01:03'),
-(3, 2, 6, '2025-11-07 13:01:03', '2025-11-07 13:01:03'),
-(4, 3, 3, '2025-11-07 13:01:03', '2025-11-07 13:01:03'),
-(5, 3, 4, '2025-11-07 13:01:03', '2025-11-07 13:01:03');
 
 -- --------------------------------------------------------
 
@@ -241,7 +281,48 @@ CREATE TABLE `options` (
 --
 
 INSERT INTO `options` (`id`, `question_id`, `option_text`, `is_correct`, `created_at`, `updated_at`) VALUES
-(2, 2, 'R', 1, '2025-11-07 13:02:13', '2025-11-07 13:02:13');
+(1, 1, 'R', 1, '2025-11-12 14:41:25', '2025-11-12 14:41:25'),
+(2, 2, 'I', 1, '2025-11-12 14:42:06', '2025-11-12 14:42:06'),
+(3, 3, 'A', 1, '2025-11-12 14:42:21', '2025-11-12 14:42:21'),
+(4, 4, 'S', 1, '2025-11-12 14:42:30', '2025-11-12 14:42:30'),
+(5, 5, 'E', 1, '2025-11-12 14:43:57', '2025-11-12 14:43:57'),
+(6, 6, 'C', 1, '2025-11-12 14:44:05', '2025-11-12 14:44:05'),
+(7, 7, 'R', 1, '2025-11-12 14:44:13', '2025-11-12 14:44:13'),
+(8, 8, 'A', 1, '2025-11-12 14:44:31', '2025-11-12 14:44:31'),
+(9, 9, 'C', 1, '2025-11-12 14:44:44', '2025-11-12 14:44:44'),
+(10, 10, 'E', 1, '2025-11-12 14:44:50', '2025-11-12 14:44:50'),
+(11, 11, 'I', 1, '2025-11-12 14:44:58', '2025-11-12 14:44:58'),
+(12, 12, 'S', 1, '2025-11-12 14:45:10', '2025-11-12 14:45:10'),
+(13, 13, 'S', 1, '2025-11-12 14:45:18', '2025-11-12 14:45:18'),
+(14, 14, 'R', 1, '2025-11-12 14:45:26', '2025-11-12 14:45:26'),
+(15, 15, 'C', 1, '2025-11-12 14:45:33', '2025-11-12 14:45:33'),
+(16, 16, 'E', 1, '2025-11-12 14:45:41', '2025-11-12 14:45:41'),
+(17, 17, 'A', 1, '2025-11-12 14:45:50', '2025-11-12 14:45:50'),
+(18, 18, 'I', 1, '2025-11-12 14:45:58', '2025-11-12 14:45:58'),
+(19, 19, 'E', 1, '2025-11-12 14:46:06', '2025-11-12 14:46:06'),
+(20, 20, 'S', 1, '2025-11-12 14:46:16', '2025-11-12 14:46:16'),
+(21, 21, 'I', 1, '2025-11-12 14:46:23', '2025-11-12 14:46:23'),
+(22, 22, 'R', 1, '2025-11-12 14:46:39', '2025-11-12 14:46:39'),
+(23, 23, 'A', 1, '2025-11-12 14:47:03', '2025-11-12 14:47:03'),
+(24, 24, 'C', 1, '2025-11-12 14:47:35', '2025-11-12 14:47:35'),
+(25, 25, 'C', 1, '2025-11-12 14:47:42', '2025-11-12 14:47:42'),
+(26, 26, 'I', 1, '2025-11-12 14:47:49', '2025-11-12 14:47:49'),
+(27, 27, 'A', 1, '2025-11-12 14:49:48', '2025-11-12 14:49:48'),
+(28, 28, 'S', 1, '2025-11-12 14:49:55', '2025-11-12 14:49:55'),
+(29, 29, 'E', 1, '2025-11-12 14:50:03', '2025-11-12 14:50:03'),
+(30, 30, 'R', 1, '2025-11-12 14:50:23', '2025-11-12 14:50:23'),
+(31, 31, 'A', 1, '2025-11-12 14:50:40', '2025-11-12 14:50:40'),
+(32, 32, 'R', 1, '2025-11-12 14:50:46', '2025-11-12 14:50:46'),
+(33, 33, 'I', 1, '2025-11-12 14:50:58', '2025-11-12 14:50:58'),
+(34, 34, 'S', 1, '2025-11-12 14:51:03', '2025-11-12 14:51:03'),
+(35, 35, 'C', 1, '2025-11-12 14:51:12', '2025-11-12 14:51:12'),
+(36, 36, 'E', 1, '2025-11-12 14:51:18', '2025-11-12 14:51:18'),
+(37, 37, 'R', 1, '2025-11-12 14:51:49', '2025-11-12 14:51:49'),
+(38, 38, 'C', 1, '2025-11-12 14:51:57', '2025-11-12 14:51:57'),
+(39, 39, 'I', 1, '2025-11-12 14:52:04', '2025-11-12 14:52:04'),
+(40, 40, 'S', 1, '2025-11-12 14:52:15', '2025-11-12 14:52:15'),
+(41, 41, 'A', 1, '2025-11-12 14:52:20', '2025-11-12 14:52:20'),
+(42, 42, 'E', 1, '2025-11-12 14:52:27', '2025-11-12 14:52:27');
 
 -- --------------------------------------------------------
 
@@ -271,13 +352,6 @@ CREATE TABLE `preferred_courses` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `preferred_courses`
---
-
-INSERT INTO `preferred_courses` (`id`, `user_id`, `course_1`, `course_2`, `course_3`, `created_at`, `updated_at`) VALUES
-(2, 28, 3, 4, 6, '2025-11-07 13:10:45', '2025-11-07 13:10:45');
-
 -- --------------------------------------------------------
 
 --
@@ -297,7 +371,48 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`id`, `question_text`, `riasec_id`, `created_at`, `updated_at`) VALUES
-(2, 'I like to work on cars', 'R', '2025-11-07 13:02:13', '2025-11-07 13:02:13');
+(1, 'I like to work on cars', 'R', '2025-11-12 14:41:25', '2025-11-12 14:41:25'),
+(2, 'I like to do puzzles', 'I', '2025-11-12 14:42:06', '2025-11-12 14:42:06'),
+(3, 'I am good at working independently', 'A', '2025-11-12 14:42:21', '2025-11-12 14:42:21'),
+(4, 'I like to work on teams', 'S', '2025-11-12 14:42:30', '2025-11-12 14:42:30'),
+(5, 'I am an ambitious person, I set goals for myself', 'E', '2025-11-12 14:43:57', '2025-11-12 14:43:57'),
+(6, 'I like to organize things, (files, desks/offices)', 'C', '2025-11-12 14:44:05', '2025-11-12 14:44:05'),
+(7, 'I like to build things', 'R', '2025-11-12 14:44:13', '2025-11-12 14:44:13'),
+(8, 'I like to read about art and music', 'A', '2025-11-12 14:44:31', '2025-11-12 14:44:31'),
+(9, 'I like to have clear instructions to follow', 'C', '2025-11-12 14:44:44', '2025-11-12 14:44:44'),
+(10, 'I like to try to influence or persuade people', 'E', '2025-11-12 14:44:50', '2025-11-12 14:44:50'),
+(11, 'I like to do experiments', 'I', '2025-11-12 14:44:58', '2025-11-12 14:44:58'),
+(12, 'I like to teach or train people', 'S', '2025-11-12 14:45:10', '2025-11-12 14:45:10'),
+(13, 'I like trying to help people solve their problems', 'S', '2025-11-12 14:45:18', '2025-11-12 14:45:18'),
+(14, 'I like to take care of animals', 'R', '2025-11-12 14:45:26', '2025-11-12 14:45:26'),
+(15, 'I wouldn’t mind working 8 hours per day in an office', 'C', '2025-11-12 14:45:33', '2025-11-12 14:45:33'),
+(16, 'I like selling things', 'E', '2025-11-12 14:45:41', '2025-11-12 14:45:41'),
+(17, 'I enjoy creative writing', 'A', '2025-11-12 14:45:50', '2025-11-12 14:45:50'),
+(18, 'I enjoy science', 'I', '2025-11-12 14:45:58', '2025-11-12 14:45:58'),
+(19, 'I am quick to take on new responsibilities', 'E', '2025-11-12 14:46:06', '2025-11-12 14:46:06'),
+(20, 'I am interested in healing people', 'S', '2025-11-12 14:46:16', '2025-11-12 14:46:16'),
+(21, 'I enjoy trying to figure out how things work', 'I', '2025-11-12 14:46:23', '2025-11-12 14:46:23'),
+(22, 'I like putting things together or assembling things', 'R', '2025-11-12 14:46:39', '2025-11-12 14:46:39'),
+(23, 'I am a creative person', 'A', '2025-11-12 14:47:03', '2025-11-12 14:47:03'),
+(24, 'I pay attention to details', 'C', '2025-11-12 14:47:35', '2025-11-12 14:47:35'),
+(25, 'I pay attention to details', 'C', '2025-11-12 14:47:42', '2025-11-12 14:47:42'),
+(26, 'I like to analyze things (problems/ situations)', 'I', '2025-11-12 14:47:49', '2025-11-12 14:47:49'),
+(27, 'I like to play instruments or sing', 'A', '2025-11-12 14:49:48', '2025-11-12 14:49:48'),
+(28, 'I enjoy learning about other cultures', 'S', '2025-11-12 14:49:55', '2025-11-12 14:49:55'),
+(29, 'I would like to start my own business', 'E', '2025-11-12 14:50:03', '2025-11-12 14:50:03'),
+(30, 'I like to cook', 'R', '2025-11-12 14:50:23', '2025-11-12 14:50:23'),
+(31, 'I like acting in plays', 'A', '2025-11-12 14:50:40', '2025-11-12 14:50:40'),
+(32, 'I am a practical person', 'R', '2025-11-12 14:50:46', '2025-11-12 14:50:46'),
+(33, 'I like working with numbers or charts', 'I', '2025-11-12 14:50:58', '2025-11-12 14:50:58'),
+(34, 'I like to get into discussions about issues', 'S', '2025-11-12 14:51:03', '2025-11-12 14:51:03'),
+(35, 'I am good at keeping records of my work', 'C', '2025-11-12 14:51:12', '2025-11-12 14:51:12'),
+(36, 'I like to lead', 'E', '2025-11-12 14:51:18', '2025-11-12 14:51:18'),
+(37, 'I like working outdoors', 'R', '2025-11-12 14:51:49', '2025-11-12 14:51:49'),
+(38, 'I would like to work in an office', 'C', '2025-11-12 14:51:57', '2025-11-12 14:51:57'),
+(39, 'I’m good at math', 'I', '2025-11-12 14:52:04', '2025-11-12 14:52:04'),
+(40, 'I like helping people', 'S', '2025-11-12 14:52:15', '2025-11-12 14:52:15'),
+(41, 'I like to draw', 'A', '2025-11-12 14:52:20', '2025-11-12 14:52:20'),
+(42, 'I like to give speeches', 'E', '2025-11-12 14:52:27', '2025-11-12 14:52:27');
 
 -- --------------------------------------------------------
 
@@ -332,7 +447,12 @@ CREATE TABLE `riasecs` (
 --
 
 INSERT INTO `riasecs` (`id`, `riasec_name`, `description`, `created_at`, `updated_at`) VALUES
-('R', 'Realistic', 'Sample Realistic', '2025-10-11 10:59:41', '2025-11-07 13:01:03');
+('A', 'Artistic', 'Sample', '2025-11-12 05:24:54', '2025-11-12 05:24:54'),
+('C', 'Conventional', 'Sample', '2025-11-12 05:33:13', '2025-11-12 05:33:13'),
+('E', 'Enterprising', 'Sample', '2025-11-12 05:27:09', '2025-11-12 05:27:09'),
+('I', 'Investigative', 'Sample', '2025-11-12 05:23:55', '2025-11-12 05:23:55'),
+('R', 'Realistic', 'Sample', '2025-11-12 05:22:12', '2025-11-12 05:22:57'),
+('S', 'Social', 'Sample', '2025-11-12 05:26:02', '2025-11-12 05:26:02');
 
 -- --------------------------------------------------------
 
@@ -369,12 +489,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('3rFPDnkYycgokl4uTbQQtwEOe4obSrXubiRcIY81', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQzFSQ1QzejRsTUdyUmV2TnFMSXVxOEtsRmtVajBtVkY3Rk8zYUVBaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1762521091),
-('9bOnLjQcv4wBTdgmQyhUhd90Kh9L22SSPlx51yjf', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiczd3ZEc0d0JyQkk2aHZaeTJhU3Y0VmFDaFBwUzZhOHZnWWJCR1lPbSI7czo1OiJlcnJvciI7czozNDoiWW91IG11c3QgbG9naW4gdG8gYWNjZXNzIHRoaXMgcGFnZSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjE6e2k6MDtzOjU6ImVycm9yIjt9fX0=', 1762503464),
-('dnDo0f1lLHIBpNTh6Q5lrb9coqZVu0XQxvpicxKm', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiakFXNG1aNWpvYmptMWNCMmJFNmNKeHFJM2dYVUpud2U4YzYwcGpMcSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9yaWFzZWMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUyOiJsb2dpbl9hZG1pbl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1762521417),
-('kz5d5ifrMpUKZcWBnY2j0U5N1VRvLa4HaxyznTI1', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 OPR/122.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiWWFHdTVJbVkwbUdGa2ExaUpVT1FjZGpIaHBGa3F6S2RIYjdSNnlMSCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9yaWFzZWMiO31zOjUyOiJsb2dpbl9hZG1pbl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1762504541),
-('twnyRDj1lrxnUU1DytoH7n964e51e91LodzJgAQ2', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 OPR/122.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZ3RJcWRIZjZaQkZ5bnlvZXQ0MWpmMTYxZWFubE44YkFGeWdacERFayI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1762504526),
-('xKcGGVzE2vE3lGmMGEjmmhWSwsHXVJTrtljjWIFP', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiT3hKczlGTTA2cmdpWXhMSDNYMHJIZmkwOTFZODREYXh4S0ZtY1lueSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1762503462);
+('4VfPtaLpESMHYftmQ1aAZUYWONxr3zY0y4mPMRnR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSTltTXBGWVYyS3J3NklHaGxQQ0RiTmg5UDVMZTROdHFJdlkwVG9HbiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1762961357),
+('WubuskfmFPDO0YlVI8w17AZOlbXChyKzBAAIxpEC', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoid0JHQ0ZoVXJHYXVveUNuQkI1NktaYTBuR1plVXNxc3c1TUZJYTZVTyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9yaWFzZWMvc2NvcmVzP3llYXI9MjAyNSI7fXM6NTI6ImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1763003413);
 
 -- --------------------------------------------------------
 
@@ -384,7 +500,7 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `default_id` varchar(255) NOT NULL,
+  `default_id` varchar(255) DEFAULT NULL,
   `fullname` varchar(255) DEFAULT NULL,
   `gender` varchar(255) DEFAULT NULL,
   `age` varchar(255) DEFAULT NULL,
@@ -396,14 +512,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `default_id`, `fullname`, `gender`, `age`, `birthday`, `strand`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(28, '2420580', 'Kyla Quebec', 'female', '21', '2001-12-26', 'HUMSS', 'kyla@example.com', '$2y$12$KtATQKdQmLhb2j/hpQCPy.mr9FvZdGTuPIAjmaXZ9I2O.B4K0ptTG', NULL, '2025-11-07 12:57:50', '2025-11-07 12:57:49'),
-(29, '24250581', 'Kyla Quebec II', 'male', '22', '2001-12-26', 'ABM', 'kyla_2@example.com', '$2y$12$cA4TKA8kF4OTFN.1IYzA3OACglW/q2S2VXiLM6slYWmvwrNCMM6J2', NULL, '2025-11-07 12:57:50', '2025-11-07 12:57:50');
 
 --
 -- Indexes for dumped tables
@@ -549,25 +657,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `career_pathways`
 --
 ALTER TABLE `career_pathways`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `course_career_pathways`
 --
 ALTER TABLE `course_career_pathways`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -591,19 +699,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `options`
 --
 ALTER TABLE `options`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `preferred_courses`
 --
 ALTER TABLE `preferred_courses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `riasec_scores`
@@ -615,7 +723,7 @@ ALTER TABLE `riasec_scores`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- Constraints for dumped tables

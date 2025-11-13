@@ -11,6 +11,9 @@ use PDF;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Phpml\Classification\DecisionTree;
+use Phpml\Dataset\ArrayDataset;
+use Phpml\CrossValidation\StratifiedRandomSplit;
 
 class ExaminationController extends Controller
 {
@@ -106,7 +109,7 @@ class ExaminationController extends Controller
         $user = Auth::guard('users')->user();
 
         if (!$user) {
-            return redirect()->route('login');
+            return redirect()->route('users.login.page');
         }
 
         $scores = DB::table('riasec_scores')
@@ -189,4 +192,111 @@ class ExaminationController extends Controller
             'riasec_order'
         ));
     }
+
+    public function ExaminersGetUserRiasecScores()
+    {
+        $user = Auth::guard('users')->user();
+        if (!$user) return response()->json(['error'=>'Unauthorized'],401);
+
+        $scores = DB::table('riasec_scores')
+            ->where('user_id',$user->id)
+            ->pluck('points','riasec_id');
+
+        if ($scores->isEmpty()) return response()->json(['error'=>'No scores'],404); // <-- your error comes from here
+
+        return response()->json([
+            'status'=>'success',
+            'user_id'=>$user->id,
+            'scores'=>$scores
+        ]);
+    }
+
+    public function ExaminersGetTrainingData()
+    {
+        $data = DB::table('riasec_scores')
+            ->select('user_id','riasec_id','points')
+            ->get()
+            ->groupBy('user_id')
+            ->map(function($userScores){
+                $row = ['label'=>$userScores->sortByDesc('points')->first()->riasec_id];
+                foreach(['R','I','A','S','E','C'] as $r){
+                    $row[$r] = $userScores->firstWhere('riasec_id',$r)->points ?? 0;
+                }
+                return $row;
+            })->values()->toArray();
+
+        return response()->json($data);
+    }
+
+    public function ExaminersPredictAnswers(Request $request)
+    {
+        $userScores = $request->query('scores');
+        if (!$userScores || !is_array($userScores)) {
+            return response()->json(['error' => 'No user scores provided'], 400);
+        }
+
+        $samples = [
+            [9, 2, 3, 4, 5, 2], 
+            [8, 3, 2, 5, 4, 3], 
+            [2, 9, 3, 4, 3, 2], 
+            [3, 8, 2, 5, 4, 3], 
+            [2, 3, 9, 4, 2, 3], 
+            [3, 2, 8, 3, 4, 2], 
+            [2, 3, 4, 9, 3, 2], 
+            [3, 2, 4, 8, 2, 3], 
+            [2, 3, 2, 3, 9, 2], 
+            [3, 2, 3, 2, 8, 3], 
+            [2, 3, 2, 3, 2, 9], 
+            [3, 2, 3, 2, 3, 8], 
+        ];
+
+        $labels = ['R','R','I','I','A','A','S','S','E','E','C','C'];
+
+        $dataset = new ArrayDataset($samples, $labels);
+        $split = new StratifiedRandomSplit($dataset, 0.25);
+        $classifier = new DecisionTree();
+        $classifier->train($split->getTrainSamples(), $split->getTrainLabels());
+
+        $predictedLabels = $classifier->predict($split->getTestSamples());
+        $actualLabels = $split->getTestLabels();
+
+        $correct = 0;
+        foreach ($predictedLabels as $i => $p) {
+            if ($p === $actualLabels[$i]) $correct++;
+        }
+        $accuracy = count($actualLabels) ? round($correct / count($actualLabels) * 100, 1) : 0;
+
+        $userScoresNumeric = array_map('intval', $userScores);
+        arsort($userScoresNumeric);
+
+        $top3 = [];
+        $count = 0;
+        $lastScore = null;
+        foreach ($userScoresNumeric as $type => $score) {
+            if ($count < 3 || $score === $lastScore) {
+                $top3[] = [
+                    'type' => $type,
+                    'percent' => round(($score / max($userScoresNumeric)) * 100, 1)
+                ];
+                $count++;
+                $lastScore = $score;
+            }
+        }
+
+        $riasecNames = [
+            'R' => 'Realistic',
+            'I' => 'Investigative',
+            'A' => 'Artistic',
+            'S' => 'Social',
+            'E' => 'Enterprising',
+            'C' => 'Conventional'
+        ];
+
+        return response()->json([
+            'top3' => $top3,
+            'model_accuracy' => $accuracy,
+            'riasec_names' => $riasecNames
+        ]);
+    }
+
 }

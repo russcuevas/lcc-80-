@@ -73,7 +73,7 @@
     <div id="nav-bar" class="d-flex justify-content-center align-items-center">
         <div>
             <img class="ub-logo" style="border-radius: 50px; height: 80px; width: 80px;" src="{{ asset('auth/images/logo.png') }}" alt="LCC Logo" /> 
-            <img class="ub-logo" style="border-radius: 50px; height: 70px; width: 70px; margin-left: -10px;" src="{{ asset('auth/images/logo.png') }}" />
+            LA CONCEPCION COLLEGE
         </div>
     </div>
 

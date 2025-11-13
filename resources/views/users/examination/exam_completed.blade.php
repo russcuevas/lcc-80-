@@ -211,6 +211,9 @@
             <br>
             <h2>Suggested Courses for Top 3 RIASEC <br> <span style="color: brown; font-size: 20px"><i>(the highlighted course related to your preferred course)</i></span></h2><br><br>
             <h6 style="color: brown; font-weight: 900;">SUGGESTED COURSE</h6>
+            <div id="prediction">
+                
+            </div>
             <ul class="mb-5">
                 @foreach ($top_scores as $riasec_id => $total_points)
                     @if (isset($groupedPreferredCourses[$riasec_id]))
@@ -233,8 +236,11 @@
                     @endif
                 @endforeach
             </ul>
+            
+
 
         </div>
+        
 
         <div id="changePasswordModal" class="modal" style="display: none;">
         <div class="modal-dialog" style="width: 100%">
@@ -310,7 +316,7 @@
                         display: true,
                         text: 'RIASEC SCORE GRAPH',
                         font: {
-                            size: 30 // Adjust the size value as needed
+                            size: 30
                         }
                     }
 
@@ -339,9 +345,50 @@
         }
     };
 
-    window.closeChangePasswordModal = closeChangePasswordModal; // Expose to global scope
+    window.closeChangePasswordModal = closeChangePasswordModal; 
 });
 
     </script>
+<script>
+async function fetchPrediction() {
+    try {
+        const responseScores = await fetch(@json(route('users.riasec.scores')));
+        const userData = await responseScores.json();
+        if(!userData || !userData.scores) throw new Error("No scores found");
+
+        const query = new URLSearchParams();
+        for(const key in userData.scores){
+            query.append(`scores[${key}]`, userData.scores[key]);
+        }
+
+        const responsePrediction = await fetch(@json(route('users.riasec.predict')) + '?' + query.toString());
+        const predictionData = await responsePrediction.json();
+        renderPrediction(predictionData);
+    } catch(err){
+        console.error(err);
+        document.querySelector("#prediction").innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
+    }
+}
+
+function renderPrediction(data){
+    const riasecNames = data.riasec_names;
+    let html = `<div class="alert alert-info mt-4">
+        <h5><strong>Top 3 RIASEC Types</strong></h5>
+        <ul style="list-style:none; padding-left:0;">`;
+
+    data.top3.forEach((item,i)=>{
+        html += `<li style="margin:4px 0;">
+            <strong>${i+1}. ${item.type}</strong> — ${riasecNames[item.type]}
+            <span style="color:gray;">[${item.percent}% percentage]</span>
+        </li>`;
+    });
+
+    document.querySelector("#prediction").innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', fetchPrediction);
+</script>
+
+
 </body>
 </html>

@@ -121,4 +121,8 @@ Route::middleware(['users'])->group(function () {
     Route::get('/examinees/examination', [ExaminationController::class, 'ExaminationPage'])->name('users.examination.page');
     Route::post('/examinees/submit_responses', [ExaminationController::class, 'SubmitResponses'])->name('users.submit.responses');
     Route::get('/examinees/completed', [ExaminationController::class, 'ExaminationCompletedPage'])->name('users.completed.page');
+    Route::get('/riasec/scores', [ExaminationController::class, 'ExaminersGetUserRiasecScores'])->name('users.riasec.scores');
+    Route::get('/riasec/training-data', [ExaminationController::class, 'ExaminersGetTrainingData'])->name('riasec.training.data');
+    Route::get('/riasec/predict', [ExaminationController::class, 'ExaminersPredictAnswers'])->name('users.riasec.predict');
+
 });
